@@ -44,7 +44,7 @@ suite("Unit Tests", () => {
     done();
   });
   test("Logic handles an invalid region (3x3 grid) placement", function (done) {
-    assert.equal(solver.checkRegionPlacement(validPuzzleString, "A", "1", "1"), true);
+    assert.equal(solver.checkRegionPlacement(validPuzzleString, "A", "2", "1"), true);
     done();
   });
   test("Valid puzzle strings pass the solver", function (done) {

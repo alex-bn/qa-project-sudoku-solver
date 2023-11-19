@@ -13,6 +13,7 @@ module.exports = function (app) {
 
     if (!puzzle || !coordinate || !value) {
       res.json({ error: "Required field(s) missing" });
+      return;
     }
     let [row, column] = coordinate.split("");
 
